@@ -42,3 +42,6 @@ typings
 
 # Compiled JS source and map files
 app/*.js*
+
+# VS Code settings directory
+.vscode
