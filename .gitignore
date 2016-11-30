@@ -39,3 +39,6 @@ typings
 
 # Cloud9 directory
 .c9
+
+# Compiled JS source and map files
+app/*.js*
