@@ -2,7 +2,7 @@
   // map: tells System loader where to look for things
   const map = {
     'app': 'dist',
-    '@angular': 'node_modules/@angular',
+		'@angular': 'node_modules/@angular',
     'angular2-in-memory-web-api': 'node_modules/angular2-in-memory-web-api',
     'rxjs': 'node_modules/rxjs'
   };
@@ -23,7 +23,7 @@
   // packages: tells System loader how to load when no filename and/or extension
   let packages = {
     'app': { 
-			main: 'main.js',  
+			main: 'app.main.js',  
 			defaultExtension: 'js' 
 		},
     'rxjs': { 
@@ -63,8 +63,6 @@
 		console.error(err); 
 	}
 
-	System
-		.config(config)
-		.import('app')
-		.catch(logErrorToConsole);
+	System.config(config);
+	System.import('app').catch(logErrorToConsole);
 })(this);

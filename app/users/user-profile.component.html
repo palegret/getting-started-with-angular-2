@@ -1,0 +1,13 @@
+<div *ngIf="user" class="jumbotron text-center">
+	<h2>
+		{{user.name}} <small>({{user.username}})</small>
+	</h2>
+	<input type="text" class="form-control" [(ngModel)]="user.name">
+</div>
+
+<div *ngIf="!user" class="jumbotron text-center">
+	<span class="glyphicon glyphicon-hand-left"></span>
+	<h2>
+		Choose a User
+	</h2>
+</div>

@@ -41,7 +41,8 @@ typings
 .c9
 
 # Compiled JS source and map files
-app/*.js*
+# Used to be 'app/*.js*', now moved to 'dist' directory
+dist
 
 # VS Code settings directory
 .vscode
